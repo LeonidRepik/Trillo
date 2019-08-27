@@ -1,0 +1,136 @@
+
+    ///////////////////////////////////////////////////////////////////
+    /////////   USER NAVIGATION SIDE BAR
+.sidebar{
+    background-color:var(--color-grey-dark-1);
+    flex:0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.side-nav{
+    
+    font-size: 1.4rem;
+    margin-top: 3.5rem;
+
+    @include respond(tab-port){
+        display:flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+
+
+
+    &__item{
+
+        @include respond(tab-port){
+           flex:1;
+           padding: auto;
+
+
+
+        }
+
+        position: relative;
+
+        &:not(:last-child){
+            margin-bottom:.5rem; 
+
+            @include respond(tab-port){
+               margin:0;
+            }
+        }
+
+        &:hover::before,
+        &:first-child::before{
+            transform:scaleY(1);
+            width:100%;
+
+        }
+
+        &:active::before{
+            background-color: var(--color-primary-light);
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:3px ;
+            background-color: var(--color-primary);
+            transform:scaleY(0);
+            transition: transform .2s,
+                    width .4s cubic-bezier(1,0,0,1) .2s,
+                    background-color .1s;
+        }
+    }
+
+
+
+    &__link{
+
+        @include respond(tab-port){
+            justify-content: center;
+ 
+         }
+
+        
+
+        &:link,
+        &:visited{
+            color:var(--color-grey-light-1);
+            display: block;
+            padding: 1.5rem 3rem;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index:1; 
+
+            @include respond(phone){
+                flex-direction: column;
+                padding:.5rem 1rem;
+                
+             }
+        }
+
+        &__icon{
+            width:1.75rem;
+            height: 1.75rem;
+            margin-right: 2rem;
+            fill:currentColor; // Color of curent elemen or of the parent element
+
+            @include respond(phone){
+                margin-right:0;
+                width:1.5rem;
+                height:1.5rem;
+                margin-bottom: .7rem;
+
+                
+             }
+        }
+
+        // &__tetx{
+                    // JUST IN  CASE
+
+        // }
+    }
+}
+
+.legal{
+    font-size: 1.2rem;
+    color:var(--color-grey-light-4);
+    text-align: center;
+    padding: 2rem;
+
+    @include respond(tab-port){ // width < 1200 ?
+        display: none;
+    }
+
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>trillo &mdash; Your all-in-one booking app</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="" class="header__logo">
+
+                        <!-- SEARCH FORM -->
+
+                <form action="#" class="header__search">
+                    <input type="text" class="header__search__input" placeholder="Seacrch hotels">
+                    <button class="header__search__button">
+                        <svg class="header__search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>   <!-- НЕ ПАШЕТ!!!!!! -->
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="header__user-nav">
+                     <div class="header__user-nav__icon-box">
+                         <svg class="header__user-nav__icon">
+                             <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                         </svg>
+                        <span class="header__user-nav__notification">7</span>
+                     </div>
+                     <div class="header__user-nav__icon-box">
+                        <svg class="header__user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                       <span class="header__user-nav__notification">13</span>
+                    </div>
+                     <div class="header__user-nav__user">
+                         <img src="img/user.jpg" alt="User photo" class="header__user-nav__user-photo">
+                         <span class="header__user-nav__user-name">LEO</span>
+                     </div>
+
+
+                            <!-- NAVIGATION PART -->
+ 
+
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__link__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                    <span class="side-nav__link__text">hotel </span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__link__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                    <span class="side-nav__link__text">flight </span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__link__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                    <span class="side-nav__link__text">car rental </span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__link__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                    <span class="side-nav__link__text">tours </span>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="legal">
+                        &copy;2017 all rights reserved
+                    </div>
+                </nav>
+
+                    <!-- MAIN PART!!!!! -->
+
+                <main class="hotel-view">
+                   <div class="gallery">
+                       <figure class="gallery__item">
+                           <img src="img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__item__photo">
+                       </figure>
+                       <figure class="gallery__item">
+                        <img src="img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__item__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__item__photo">
+                    </figure>
+                   </div>
+
+                     <!-- SMALL PANNEL UNDER THE GALLERY! -->
+
+                   <div class="overview">
+                       <h1 class="overview__heading">
+                           Hotel last plasmas
+                       </h1>
+                       <div class="overview__stars">
+                        <svg class="overview__stars__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__stars__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg> 
+                        <svg class="overview__stars__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg> 
+                        <svg class="overview__stars__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg> 
+                        <svg class="overview__stars__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg> 
+                       </div>
+                       <div class="overview__location">
+                        <svg class="overview__location__pin">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="overview__btn-inline btn-name">KIEV,UKRAINE</button>
+                       </div>
+                       <div class="overview__rating">
+                            <div class="overview__rating__average">8.6</div>
+                            <div class="overview__rating__count">429 votes</div>
+                       </div>
+                   </div>
+
+                   <!-- LEFT CONTAINER LAYOUT!!!!!! -->
+
+                   <div class="details">
+                    <div class="details__description">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cumque, explicabo quis velit vitae quae, quo tenetur reiciendis id dignissimos dolores, necessitatibus vel? Rerum voluptate quam incidunt iure veritatis voluptates?
+                        </p>
+                        <p class="paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cumque, explicabo quis velit vitae quae, quo tenetur reiciendis id dignissimos dolores, necessitatibus vel? Rerum voluptate quam incidunt iure veritatis voluptates?
+                        </p>
+                        <ul class="list">
+                            <li class="list__item">breakfest included</li>
+                            <li class="list__item">Pls book at least s</li>
+                            <li class="list__item">Hey yo I'm a pirate</li>
+                            <li class="list__item">I just need to put </li>
+                            <li class="list__item">I hope u're geetting</li>
+                            <li class="list__item">Good text to check </li>
+                            <li class="list__item">Almost done doing </li>
+                            <li class="list__item">Fuf that was the </li>
+                        </ul>
+                        <div class="recomended">
+                            <p class="recomended__count">
+                                Stronly recomending to hire me!
+                            </p>
+                            <div class="recomended__friends">
+                                <img src="img/user-1.jpg" alt="approoved-users" class="recomended__friends_photo">
+                                <img src="img/user-2.jpg" alt="approoved-users" class="recomended__friends_photo">
+                                <img src="img/user-3.jpg" alt="approoved-users" class="recomended__friends_photo">
+                                <img src="img/user-4.jpg" alt="approoved-users" class="recomended__friends_photo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT CONTAINER LAYOUT!!!!!!!! -->
+
+                       <figure class="user-reviews">
+                           <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint magnam quae cum, commodi ratione. Ab sint magnam quae cum, commodi ratione.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="/img/user-1.jpg" alt="some seo" class="review__user__photo">
+                                    <div class="review__user__box">
+                                        <p class="review__user__name">Mert Tan</p>
+                                        <p class="review__user__data">June 6-th, 2019</p>
+                                    </div>
+                                    <div class="review__user__rating">7.2</div>
+                                </figcaption>
+                           </figure>
+                           <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint magnam quae cum, commodi ratione. Ab sint magnam quae cum, commodi ratione.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="/img/user-2.jpg" alt="some seo" class="review__user__photo">
+                                    <div class="review__user__box">
+                                        <p class="review__user__name">Saigun Guven</p>
+                                        <p class="review__user__data">June 6-th, 2019</p>
+                                    </div>
+                                    <div class="review__user__rating">9.1</div>
+                                </figcaption>
+                           </figure>
+                           <a href="#" class="review__btn btn-name-dark">Shaw all <span>&rarr;</span></a>
+                   </div>
+
+                   <div class="cta">
+                        <h2 class="cta__book-now">
+                            Good new we have 4 rooms for u to stay in.
+                        </h2>
+                        <button class="cta__btn">
+                            <span class="cta__btn__visible">Book now!</span>
+                            <span class="cta__btn__invisible">Only 4 rooms left!</span>
+                        </button>
+                   </div>
+
+                </main>
+            </div>        
+        </div>
+    </body>
+</html>

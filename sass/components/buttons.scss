@@ -1,0 +1,36 @@
+.btn-name{
+    border:none;
+    color:var(--color-primary);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover{
+        color:var(--color-grey-dark-1);
+    }
+
+    &:focus{
+        outline: none;
+        animation:btnname 1s infinite;
+    }
+}
+
+.btn-name-dark{
+    border:none;
+    color:var(--color-primary-dark);
+    font-size: 1.3rem;
+    border-bottom: 1px solid currentColor;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover{
+        color:var(--color-grey-dark-1);
+    }
+
+    &:focus{
+        outline: none;
+        animation:btnname 1s infinite;
+    }
+}
+
